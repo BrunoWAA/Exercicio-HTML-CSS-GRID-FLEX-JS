@@ -1,0 +1,159 @@
+:root{
+    --cor-amarelo: #FCE6A8;
+    --cor-verde: #d3e5e1;
+    --cor-cinza-claro: #e3e8ed;
+    --cor-cinza-medio: #ced8e0;
+    --cor-cinza-escuro: #788896;
+}
+
+
+
+body{
+    margin: 0;
+    background-color: var(--cor-verde);
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.6fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    
+    
+    grid-template-areas: 
+    "botoes  titulo titulo "
+    "conteudo conteudo conteudo"
+    "footer footer footer";
+}
+
+.botoes{
+    display: flex;
+    grid-area: botoes;
+    border: solid var(--cor-amarelo);
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    
+    background-color: var(--cor-cinza-escuro);
+    display: flex;
+    padding: 10px;
+
+    margin: 2px;
+    width: 70px;
+    height: 5px;
+
+
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    color: white;
+    border-radius: 5px;
+
+}
+
+.title{
+    display: flex;
+    border: solid var(--cor-amarelo);
+    grid-area: titulo;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.content{
+
+    grid-area: conteudo;
+    border: solid var(--cor-amarelo);
+    display: flex;
+    flex-direction:column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    padding: 15px;
+
+
+
+}
+
+.conteudodiv{
+
+    display: flex;
+    background-color: var(--cor-cinza-claro);
+    width: 30%;
+    height: 50%;
+    gap: 2px;
+    padding: 10px;
+
+
+}
+
+.conteudoDivEsquerda{
+    display: flex;
+    width: 50%;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.conteudoDivDireita{
+    display: flex;
+    width: 50%;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--cor-cinza-escuro) 2px;
+    background-color: var(--cor-cinza-medio);
+}
+
+.input{
+    display: flex;
+    width: 120px;
+    margin: 5px;
+    border-radius: 5px;
+    height: 30px;
+    box-sizing: border-box;
+    
+
+}
+
+.somar{
+    display: flex;
+    background-color: var(--cor-cinza-escuro);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 120px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.resultadoCalculadora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    font-size: 50px;
+}
+
+.imagemRetornoAPI{
+    width: 70%;
+    height: 70%;
+
+}
+
+
+.footer{
+    display: flex;
+    border: solid var(--cor-amarelo);
+    grid-area: footer;
+    align-items: center;
+    justify-content: center;
+}
