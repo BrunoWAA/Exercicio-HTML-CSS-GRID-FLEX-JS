@@ -23,6 +23,15 @@ body{
     "footer footer footer";
 }
 
+.bodyContato{
+
+
+    grid-template-areas: 
+    "botoes  titulo titulo "
+    "contato conteudo conteudo"
+    "footer footer footer";
+}
+
 .botoes{
     display: flex;
     grid-area: botoes;
@@ -79,6 +88,57 @@ body{
 
 }
 
+.contato{
+    box-sizing: border-box;
+    grid-area: contato;
+    gap: 20px;
+    padding: 20px;
+
+        
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.foto{
+    margin-top: 20%;
+    display: flex;
+    width: 100%;
+    height: 250px;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img{
+
+    border: solid var(--cor-cinza-escuro) 2px;
+    border-radius: 50%;
+    max-height:250px;
+
+
+}
+
+.redeSocial{
+    display: flex;
+    background-color: var(--cor-cinza-escuro);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+
+    cursor: pointer;
+    
+    margin: 12px;
+
+    color: white;
+
+
+}
+
 .conteudodiv{
 
     display: flex;
@@ -87,6 +147,7 @@ body{
     height: 50%;
     gap: 2px;
     padding: 10px;
+
 
 
 }
@@ -148,6 +209,54 @@ body{
     height: 70%;
 
 }
+
+.conteudoContato{
+    display: grid;
+
+    margin: 30px 10px 0px 20px;
+    background-color: var(--cor-cinza-claro);
+  
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  
+    align-items: center;  
+
+    border-radius: 2px;
+
+    border: solid black 2px;
+
+
+
+    
+
+}
+
+.nome {
+    border-radius: 6px;
+    height: 20px;
+    border: solid var(--cor-cinza-escuro) 2px;
+    
+
+}
+
+.email {
+    border-radius: 6px;
+    width: 100%;
+}
+
+.comentario{
+    
+    width: 100%;
+    height: 100px;
+}
+
+.enviar{
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
 
 
 .footer{
